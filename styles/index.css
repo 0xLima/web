@@ -1,16 +1,18 @@
-html {
-  height: 100%;
-  width: 100%;
+/* Import font dengan benar */
+@font-face {
+  font-family: 'Pulang';
+  src: url('src/fonts/Pulang.otf') format('opentype');
 }
 
+/* Gunakan font yang diimpor */
+.front-text {
+  font-family: 'Pulang', sans-serif;
+}
+
+/* Pastikan gambar background di-load dengan benar */
 .front {
-  background-image: url(src/images/pink-front.png);
+  background-image: url('src/image/pink-front.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.front-text {
-  font-family: url(src/fonts/Pulang.otf);
-  
 }
